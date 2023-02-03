@@ -39,14 +39,6 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp.router(
       getPages: [
         GetPage(
-          name: Paths.splashScreen,
-          page: () => const SplashScreenPage(),
-          transition: Transition.fadeIn,
-          transitionDuration: const Duration(milliseconds: 500),
-          preventDuplicates: true,
-          participatesInRootNavigator: true,
-        ),
-        GetPage(
           name: Paths.dashboard,
           page: () => const DashboardPage(),
           transition: Transition.fadeIn,
@@ -55,6 +47,14 @@ class MyApp extends StatelessWidget {
           participatesInRootNavigator: true,
           preventDuplicates: true,
           children: [
+            GetPage(
+              name: Paths.splashScreen,
+              page: () => const SplashScreenPage(),
+              transition: Transition.fadeIn,
+              transitionDuration: const Duration(milliseconds: 500),
+              preventDuplicates: true,
+              participatesInRootNavigator: true,
+            ),
             GetPage(
               name: Paths.page1,
               page: () => const Page1Page(),
@@ -138,6 +138,9 @@ class MyApp extends StatelessWidget {
           ],
         )
       ],
+      routeInformationParser: GetInformationParser(
+        initialRoute: Routes.splashScreen,
+      ),
     );
   }
 }
