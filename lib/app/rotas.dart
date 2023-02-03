@@ -1,5 +1,6 @@
 abstract class Paths {
   static const dashboard = '/dashboard';
+  static const login = '/login';
   static const splashScreen = '/';
   static const page1 = '/page1';
   static const page2 = '/page2';
@@ -15,6 +16,7 @@ abstract class Paths {
 
 abstract class Routes {
   static const dashboard = Paths.dashboard;
+  static const login = Paths.login;
   static const splashScreen = Paths.splashScreen;
   static const page1 = Paths.page1;
   static const page2 = Paths.page2;

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:menuexemplo/app/dashboard/dashboard_controller.dart';
 import 'package:menuexemplo/app/dashboard/dashboard_page.dart';
+import 'package:menuexemplo/app/login/login_page.dart';
 import 'package:menuexemplo/app/page1/page1_controller.dart';
 import 'package:menuexemplo/app/page1/page1_page.dart';
 import 'package:menuexemplo/app/page10/page10_controller.dart';
@@ -50,6 +51,14 @@ class MyApp extends StatelessWidget {
             GetPage(
               name: Paths.splashScreen,
               page: () => const SplashScreenPage(),
+              transition: Transition.fadeIn,
+              transitionDuration: const Duration(milliseconds: 500),
+              preventDuplicates: true,
+              participatesInRootNavigator: true,
+            ),
+            GetPage(
+              name: Paths.login,
+              page: () => const LoginPage(),
               transition: Transition.fadeIn,
               transitionDuration: const Duration(milliseconds: 500),
               preventDuplicates: true,
@@ -138,9 +147,6 @@ class MyApp extends StatelessWidget {
           ],
         )
       ],
-      routeInformationParser: GetInformationParser(
-        initialRoute: Routes.splashScreen,
-      ),
     );
   }
 }
