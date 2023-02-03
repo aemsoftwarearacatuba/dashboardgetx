@@ -1,7 +1,7 @@
 abstract class Paths {
-  static const dashboard = '/dashboard';
+  static const dashboard = '/';
   static const login = '/login';
-  static const splashScreen = '/';
+  static const splashScreen = '/splascreen';
   static const page1 = '/page1';
   static const page2 = '/page2';
   static const page3 = '/page3';
