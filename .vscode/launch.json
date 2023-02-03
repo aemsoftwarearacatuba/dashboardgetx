@@ -1,0 +1,46 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "getx_nested_router_outlets-master",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-renderer","html",
+                "--web-port",
+                "5000"
+            ]       
+        },
+        {
+            "name": "getx_nested_router_outlets-master (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-renderer","html",
+                "--web-port",
+                "5000"
+            ]       
+        },
+        {
+            "name": "getx_nested_router_outlets-master (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-renderer","html",
+                "--web-port",
+                "5000"
+            ]       
+        }
+    ]
+}
