@@ -8,15 +8,11 @@ class Page15Page extends GetView<Page15Controller> {
 
   @override
   Widget build(BuildContext context) {
-    return GetRouterOutlet.builder(
-      builder: (context, delegate, current) {
-        return Scaffold(
-          appBar: AppBar(
-            title: const Text('Page 15'),
-          ),
-          body: Container(),
-        );
-      },
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Page 15'),
+      ),
+      body: Container(),
     );
   }
 }

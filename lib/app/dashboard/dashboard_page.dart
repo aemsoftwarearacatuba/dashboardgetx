@@ -8,21 +8,32 @@ class DashboardPage extends GetView<DashBoardController> {
   const DashboardPage({super.key});
 
   @override
-  Widget build(BuildContext context) => GetRouterOutlet.builder(
-        builder: (context, delegate, current) => Row(
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Row(
           children: [
             if (!context.isPhone)
-              const AppDrawer(
-                verticalDivider: true,
-              ),
+              Obx(() {
+                return AppDrawer(
+                  id: controller.navigatorIndex,
+                  verticalDivider: true,
+                  selectedPage: controller.selectedPage,
+                  onDestinationSelected: (value) =>
+                      controller.selectedPage = value,
+                );
+              }),
             Expanded(
-              child: Scaffold(
-                body: GetRouterOutlet(
-                  initialRoute: Routes.page1,
-                ),
+              child: Navigator(
+                initialRoute: Paths.page1,
+                key: Get.nestedKey(controller.navigatorIndex),
+                onGenerateRoute: controller.onGeneratedRouter,
+                observers: [GetObserver((_) {}, Get.routing)],
               ),
             ),
           ],
         ),
-      );
+      ),
+    );
+  }
 }

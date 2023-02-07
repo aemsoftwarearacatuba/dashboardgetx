@@ -6,12 +6,18 @@ abstract class Paths {
   static const page2 = '/page2';
   static const page3 = '/page3';
   static const page4 = '/page4';
+  static const page5 = '/page5';
   static const page6 = '/page6';
   static const page7 = '/page7';
   static const page8 = '/page8';
   static const page9 = '/page9';
   static const page10 = '/page10';
   static const page11 = '/page11';
+  static const page12 = '/page12';
+
+  static const page13 = '/page13';
+  static const page14 = '/page14';
+  static const page15 = '/page15';
 }
 
 abstract class Routes {
@@ -22,10 +28,16 @@ abstract class Routes {
   static const page2 = Paths.page2;
   static const page3 = Paths.page3;
   static const page4 = Paths.page4;
+  static const page5 = Paths.page5;
   static const page6 = Paths.page6;
   static const page7 = Paths.page7;
   static const page8 = Paths.page8;
   static const page9 = Paths.page9;
   static const page10 = Paths.page10;
   static const page11 = Paths.page11;
+  static const page12 = Paths.page12;
+
+  static const page13 = Paths.page13;
+  static const page14 = Paths.page14;
+  static const page15 = Paths.page15;
 }

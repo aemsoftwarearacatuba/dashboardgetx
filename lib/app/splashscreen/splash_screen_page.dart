@@ -24,21 +24,17 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
 
   @override
   Widget build(BuildContext context) {
-    return GetRouterOutlet.builder(
-      builder: (context, delegate, current) {
-        return const Scaffold(
-          backgroundColor: Colors.white,
-          body: Center(
-            child: Text(
-              'SplashScreen',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 40,
-              ),
-            ),
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text(
+          'SplashScreen',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 40,
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 }

@@ -17,20 +17,16 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return GetRouterOutlet.builder(
-      builder: (context, delegate, current) {
-        return Scaffold(
-          backgroundColor: Colors.white,
-          body: Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Get.rootDelegate.offAndToNamed(Routes.dashboard);
-              },
-              child: const Text('Login'),
-            ),
-          ),
-        );
-      },
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Get.rootDelegate.offAndToNamed(Routes.dashboard);
+          },
+          child: const Text('Login'),
+        ),
+      ),
     );
   }
 }
