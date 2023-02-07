@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:menuexemplo/app/app_scaffold.dart';
 
 import './page1_controller.dart';
 
@@ -8,11 +9,8 @@ class Page1Page extends GetView<Page1Controller> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Page 1'),
-      ),
-      body: Container(),
+    return const AppScaffold(
+      title: 'Page 1',
     );
   }
 }

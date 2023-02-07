@@ -8,9 +8,9 @@ import 'package:menuexemplo/app/rotas.dart';
 
 class AppDrawer extends StatefulWidget {
   const AppDrawer({
-    required this.verticalDivider,
-    required this.id,
-    required this.selectedPage,
+    this.verticalDivider = false,
+    this.id,
+    this.selectedPage,
     this.onDestinationSelected,
     Key? key,
   }) : super(key: key);
