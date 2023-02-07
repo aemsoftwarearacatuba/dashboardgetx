@@ -17,7 +17,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     Future.delayed(
       const Duration(seconds: 5),
       () {
-        Get.rootDelegate.offAndToNamed(Routes.login);
+        Get.offAllNamed(Routes.login);
       },
     );
   }

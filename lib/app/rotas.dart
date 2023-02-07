@@ -18,6 +18,10 @@ abstract class Paths {
   static const page13 = '/page13';
   static const page14 = '/page14';
   static const page15 = '/page15';
+
+  static const page16 = '/page16';
+  static const page17 = '/page17';
+  static const page18 = '/page18';
 }
 
 abstract class Routes {
@@ -40,4 +44,7 @@ abstract class Routes {
   static const page13 = Paths.page13;
   static const page14 = Paths.page14;
   static const page15 = Paths.page15;
+  static const page16 = Paths.page16;
+  static const page17 = Paths.page17;
+  static const page18 = Paths.page18;
 }

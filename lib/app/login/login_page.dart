@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Get.rootDelegate.offAndToNamed(Routes.dashboard);
+            Get.offAllNamed(Routes.dashboard);
           },
           child: const Text('Login'),
         ),

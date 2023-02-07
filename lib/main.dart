@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: Paths.dashboard,
+      initialRoute: Paths.splashScreen,
       getPages: [
         GetPage(
           name: Paths.splashScreen,

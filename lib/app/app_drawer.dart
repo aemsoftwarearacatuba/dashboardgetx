@@ -192,6 +192,47 @@ class _AppDrawerState extends State<AppDrawer> with RouteAware {
                           },
                           isSelected: widget.selectedPage == Routes.page15,
                         ),
+                        CustomListTile(
+                          icon: const Icon(Icons.home, size: 25),
+                          title: 'Page 16',
+                          onTap: () async {
+                            _globalKey1.currentState?.collapse();
+                            _globalKey2.currentState?.collapse();
+
+                            _callPage(Routes.page16);
+                          },
+                          isSelected: widget.selectedPage == Routes.page16,
+                        ),
+                        CustomListTile(
+                          icon: const Icon(Icons.home, size: 25),
+                          title: 'Page 17',
+                          onTap: () async {
+                            _globalKey1.currentState?.collapse();
+                            _globalKey2.currentState?.collapse();
+
+                            _callPage(Routes.page17);
+                          },
+                          isSelected: widget.selectedPage == Routes.page17,
+                        ),
+                        CustomListTile(
+                          icon: const Icon(Icons.home, size: 25),
+                          title: 'Page 18',
+                          onTap: () async {
+                            _globalKey1.currentState?.collapse();
+                            _globalKey2.currentState?.collapse();
+
+                            _callPage(Routes.page18);
+                          },
+                          isSelected: widget.selectedPage == Routes.page18,
+                        ),
+                        CustomListTile(
+                          icon: const Icon(Icons.home, size: 25),
+                          title: 'Sair',
+                          onTap: () async {
+                            Get.offAllNamed(Routes.login);
+                          },
+                          isMenu: false,
+                        ),
                       ],
                     ),
                   ),
